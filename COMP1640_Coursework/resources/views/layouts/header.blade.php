@@ -15,6 +15,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/home.css') }}">
+    <script src="{{ asset('js/custom.js') }}" defer></script>
     <!-- <script src="js/jquery-3.6.0.min.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
@@ -67,16 +68,20 @@
                                 <a class="nav-link" href="Home.html">Home</a>
                             </li>
 
-                            <li><a class="nav-link" href="#">Category</a>
-                                <ul class="dropdown">
-                                    <li><a class="category1" href="#">Infomation Technology</a></li>
-                                    <li><a class="category1" href="#">Business Administration</a></li>
-                                    <li><a class="category1" href="#">Graphic Design</a></li>
-                                    <li><a class="category1" href="#">Event Management</a></li>
-                                    <li><a class="category1" href="#">Media Management</a></li>
-                                    <li><a class="category1" href="#">Marketing Manager</a></li>
-                                    <li><a class="category1" href="#">Others</a></li>
-                                </ul>
+                            <li>
+                                <div class="nav-item dropdown">
+                                    <a onclick="myFunction()" class="nav-link dropbtn">Category</a>
+
+                                    <div id="myDropdown" class="dropdown-content">
+                                        <a class="category1" href="#">Infomation Technology</a>
+                                        <a class="category1" href="#">Business Administration</a>
+                                        <a class="category1" href="#">Graphic Design</a>
+                                        <a class="category1" href="#">Event Management</a>
+                                        <a class="category1" href="#">Media Management</a>
+                                        <a class="category1" href="#">Marketing Manager</a>
+                                        <a class="category1" href="#">Others</a>
+                                    </div>
+                                </div>
                             </li>
 
                             <li class="nav-item">
