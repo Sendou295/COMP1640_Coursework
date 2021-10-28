@@ -43,4 +43,12 @@ Route::get('admin/home', [\App\Http\Controllers\HomeController::class, 'index'])
 
 Auth::routes();
 
+<<<<<<< Updated upstream
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+=======
+
+
+//admin
+Route::get('/admin', [\App\Http\Controllers\AdminController::class, 'index'])->name('admin_login');
+Route::get('/dashboard', [\App\Http\Controllers\AdminController::class, 'show_dashboard'])->name('admin.dashboard');
+>>>>>>> Stashed changes
