@@ -7,7 +7,11 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<<<<<<< HEAD
   <style>    
+=======
+  <style>
+>>>>>>> 3ecd269c4fce8a1fd60dc84e3e3de4ad92a1a9e0
     /* Set black background color, white text and some padding */
     footer {
       background-color: grey;
@@ -24,14 +28,21 @@
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
+<<<<<<< HEAD
         <span class="icon-bar"></span>                        
+=======
+        <span class="icon-bar"></span>
+>>>>>>> 3ecd269c4fce8a1fd60dc84e3e3de4ad92a1a9e0
       </button>
       <a class="navbar-brand" href="home">iIDEA</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="home">Home</a></li>
+<<<<<<< HEAD
         <li><a href="idea">Dashboard</a></li>
+=======
+>>>>>>> 3ecd269c4fce8a1fd60dc84e3e3de4ad92a1a9e0
         <li><a href="page">Personal Page</a></li>
         <li><a href="idea">Ideas</a></li>
       </ul>
@@ -42,7 +53,11 @@
             <button class="btn btn-default" type="button">
               <span class="glyphicon glyphicon-search"></span>
             </button>
+<<<<<<< HEAD
           </span>        
+=======
+          </span>
+>>>>>>> 3ecd269c4fce8a1fd60dc84e3e3de4ad92a1a9e0
         </div>
       </form>
       <ul class="nav navbar-nav navbar-right">
@@ -67,12 +82,22 @@
         <div class="col-sm-3">
           <div class="well">
             <h4>Most Viewed Idea</h4>
+<<<<<<< HEAD
             <p> <span class="glyphicon glyphicon-eye-open"></span> 600 </p> 
+=======
+            <p> <span class="glyphicon glyphicon-eye-open"></span> 600 </p>
+>>>>>>> 3ecd269c4fce8a1fd60dc84e3e3de4ad92a1a9e0
           </div>
         </div>
         </div>
       </div>
+<<<<<<< HEAD
 </div>
 
 </body>
+=======
+</body>
+
+
+>>>>>>> 3ecd269c4fce8a1fd60dc84e3e3de4ad92a1a9e0
 </html>

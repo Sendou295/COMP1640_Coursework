@@ -30,6 +30,7 @@ function myFunction() {
       x.className = x.className.replace(" w3-show", "");
     }
   }
+<<<<<<< HEAD
 
 });
  /* When the user clicks on the button,
@@ -58,3 +59,6 @@ function myFunction() {
     document.getElementById("editCmtDropdown").classList.toggle("show");
   }
   
+=======
+});
+>>>>>>> 3ecd269c4fce8a1fd60dc84e3e3de4ad92a1a9e0

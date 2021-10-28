@@ -181,6 +181,10 @@ h6 {
 } */
 
 .navbar li {
+<<<<<<< HEAD
+=======
+  color: #fff;
+>>>>>>> 3ecd269c4fce8a1fd60dc84e3e3de4ad92a1a9e0
   display: block;
   float: left;
   padding: 1rem;
@@ -228,7 +232,14 @@ ul li ul:hover {
   display: block;
   
 }
+<<<<<<< HEAD
 
+=======
+.dropdown li a:hover{
+  background-color: white;
+  color: #f5973e ;
+}
+>>>>>>> 3ecd269c4fce8a1fd60dc84e3e3de4ad92a1a9e0
 .category1{
   text-align: center;
   font-size: 16px !important;
@@ -262,6 +273,7 @@ ul li ul:hover {
   color: #ffffff;
 }
 
+<<<<<<< HEAD
 /* Dropdown Button */
 .dropbtn {
   cursor: pointer;
@@ -296,6 +308,9 @@ ul li ul:hover {
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}  
+=======
+
+>>>>>>> 3ecd269c4fce8a1fd60dc84e3e3de4ad92a1a9e0
 
 /* Hamburger */
 .hamburger_container{
@@ -387,6 +402,7 @@ color: #b5aec4;
   position: absolute;
   height: 100%;
 }
+<<<<<<< HEAD
 .card-registration .select-input.form-control[readonly]:not([disabled]) {
   
   font-size: 1rem;
@@ -409,3 +425,5 @@ color: #b5aec4;
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   /* background: linear-gradient(to right, rgba(161, 196, 253, 1), rgba(194, 233, 251, 1)); */
 }
+=======
+>>>>>>> 3ecd269c4fce8a1fd60dc84e3e3de4ad92a1a9e0
