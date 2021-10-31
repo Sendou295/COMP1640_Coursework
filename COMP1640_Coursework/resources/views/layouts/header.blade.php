@@ -23,30 +23,6 @@
 
 <body>
 
-<!-- Start Top Nav -->
-
-<nav class="navbar-expand-lg navbar-light d-none d-lg-block" id="templatemo_nav_top">
-    <div class="container text-light">
-        <div class="w-100 d-flex justify-content-between">
-            <div>
-                <a class="navbar-sm-brand text-light text-decoration-none"
-                   href="mailto:trannhatminh295@gmail.com">1640 Enterprise Web Software Development (Group 2)</a>
-
-            </div>
-            <div>
-                <a class="text-light" href="https://fb.com/templatemo" target="_blank" rel="sponsored"><i
-                        class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
-                <a class="text-light" href="https://www.instagram.com/sendohtks/" target="_blank"><i
-                        class="fab fa-instagram fa-sm fa-fw me-2"></i></a>
-                <a class="text-light" href="https://twitter.com/" target="_blank"><i
-                        class="fab fa-twitter fa-sm fa-fw me-2"></i></a>
-                <a class="text-light" href="https://www.linkedin.com/in/minh-tr%E1%BA%A7n-nh%E1%BA%ADt-6b419a180/"
-                   target="_blank"><i class="fab fa-linkedin fa-sm fa-fw"></i></a>
-            </div>
-        </div>
-    </div>
-</nav>
-<!-- Close Top Nav -->
 
 <!-- Header -->
 <header class="header trans_300">
@@ -67,16 +43,20 @@
                                 <a class="nav-link" href="{{ route('idea.index') }}">Home</a>
                             </li>
 
-                            <li><a class="nav-link" href="#">Category</a>
-                                <ul class="dropdown">
-                                    <li><a class="category1" href="#">Infomation Technology</a></li>
-                                    <li><a class="category1" href="#">Business Administration</a></li>
-                                    <li><a class="category1" href="#">Graphic Design</a></li>
-                                    <li><a class="category1" href="#">Event Management</a></li>
-                                    <li><a class="category1" href="#">Media Management</a></li>
-                                    <li><a class="category1" href="#">Marketing Manager</a></li>
-                                    <li><a class="category1" href="#">Others</a></li>
-                                </ul>
+                            <li>
+                                <div class="nav-item dropdown">
+                                    <a onclick="myFunction()" class="nav-link dropbtn">Category</a>
+
+                                    <div id="myDropdown" class="dropdown-content">
+                                        <a class="category1" href="#">Infomation Technology</a>
+                                        <a class="category1" href="#">Business Administration</a>
+                                        <a class="category1" href="#">Graphic Design</a>
+                                        <a class="category1" href="#">Event Management</a>
+                                        <a class="category1" href="#">Media Management</a>
+                                        <a class="category1" href="#">Marketing Manager</a>
+                                        <a class="category1" href="#">Others</a>
+                                    </div>
+                                </div>
                             </li>
 
                             <li class="nav-item">
@@ -96,13 +76,16 @@
                                         </li>
                                     @endif
                                 @else
-                                    <li class="nav-item dropdown">
-                                        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+
+                                
+                                    <li>
+                                        <div class="nav-item dropdown">
+                                        <a onclick="logoutFunction()" class="nav-link dropbtn">
                                             {{ Auth::user()->name }}
                                         </a>
 
-                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                            <a class="dropdown-item" href="{{ route('logout') }}"
+                                        <div id="logoutDropdown" class="dropdown-content">
+                                            <a class="category1" href="{{ route('logout') }}"
                                                onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                                 {{ __('Logout') }}
@@ -112,6 +95,7 @@
                                                 @csrf
                                             </form>
                                         </div>
+                                    </div>
                                     </li>
                                 @endguest
                         </ul>
@@ -120,5 +104,7 @@
                 @yield('content')
                 </main>
 </body>
-
+<script src="{{asset('js/custom.js')}}" defer></script>
+<!-- Isotope File -->
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
 </html>
